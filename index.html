@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Wire | Bengaluru & Global News Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP RUNNING TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>🚨 LOCAL UPGRADE: BDA routes extra Metro train runs for June 27 mass city environmental drive</span>
+            <span>🌍 GLOBAL NEWS: Keir Starmer resigns as UK Prime Minister following immense political pressure</span>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER WITH EXPANDED METEOROLOGICAL MODULE -->
+    <header>
+        <div class="logo">BHARAT<span>WIRE</span></div>
+        
+        <!-- LARGE WEATHER DASHBOARD UNIT -->
+        <div class="weather-dashboard">
+            <div class="weather-main">
+                <span class="weather-loc">📍 Bengaluru Live</span>
+                <span class="weather-temp" id="weatherTemp">23°C</span>
+                <span class="weather-cond" id="weatherCond">Scattered Clouds</span>
+            </div>
+            <div class="weather-details">
+                <div class="weather-item">Feels Like: <strong id="weatherFeels">24.5°C</strong></div>
+                <div class="weather-item">Wind Force: <strong id="weatherWind">14 km/h West</strong></div>
+                <div class="weather-item">Humidity: <strong id="weatherHumid">82%</strong></div>
+                <div class="weather-item">Precipitation: <strong id="weatherRain">15% Chance</strong></div>
+                <div class="weather-item">UV Radiation: <strong id="weatherUV">0 (Low)</strong></div>
+                <div class="weather-item">Air Quality: <strong id="weatherAQI" style="color: #00ff00;">38 (Good)</strong></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- UNBRANDED FLOATING DISPATCH POPUP (Smoothly drifts downward out of sight) -->
+    <div id="breakingPopup" class="live-alert-popup" data-url="https://www.google.com/search?q=Bengaluru+1.5+million+saplings+plantation+drive+June+27">
+        <div class="popup-top">
+            <div class="pulse-indicator"></div> Fresh Flash News
+        </div>
+        <h4 id="popupHeadline">GBA issues global world-record attempt guidelines for Bengaluru city greening initiative.</h4>
+        <p>Click layout element to navigate full Chrome feed</p>
+    </div>
+
+    <!-- MAIN APP WRAPPER -->
+    <div class="main-container">
+        
+        <!-- SECTION A: BENGALURU LOCAL DESK -->
+        <h2 class="grid-header">Bengaluru Local Desk</h2>
+        <div class="news-grid">
+            
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=1.5+million+saplings+plantation+drive+June+27+Bengaluru')">
+                <div class="card-img-box">
+                    <span class="badge">City Mission</span>
+                    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=500&auto=format&fit=crop&q=80" alt="Green Plantation Project">
+                </div>
+                <div class="card-body">
+                    <h3>1.5 Million Saplings Greening Target Slated For June 27</h3>
+                    <p>The Greater Bengaluru Authority divides 243 acres into 49 dedicated zones to execute a historic ecological world record event on Kempegowda Day.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=BESCOM+power+shutdown+Bengaluru+June')">
+                <div class="card-img-box">
+                    <span class="badge">Grid Utility</span>
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500&auto=format&fit=crop&q=80" alt="Substation Infrastructure">
+                </div>
+                <div class="card-body">
+                    <h3>Scheduled BESCOM Grid Interruptions Hit Outer Ring Road Corridor</h3>
+                    <p>Critical power transmission lines face planned cyclical maintenance outages from 10 AM to 5 PM, affecting tech parks and residential zones.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=IIM+Bangalore+Positive+Impact+Rating+2026')">
+                <div class="card-img-box">
+                    <span class="badge">Education</span>
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&auto=format&fit=crop&q=80" alt="University Campus Building">
+                </div>
+                <div class="card-body">
+                    <h3>IIM Bangalore Secures Global 9.7 Score in Elite Impact Ratings</h3>
+                    <p>IIMB retains its supreme Level-5 Pioneering status for the fifth straight year, significantly surpassing international averages.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION B: BBC WORLDWIDE NEWS DESK -->
+        <h2 class="grid-header bbc-header">BBC World News</h2>
+        <div class="news-grid">
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=BBC+News+Keir+Starmer+resigns+Prime+Minister')">
+                <div class="card-img-box">
+                    <span class="badge global-badge">BBC World</span>
+                    <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=500&auto=format&fit=crop&q=80" alt="10 Downing Street UK Government">
+                </div>
+                <div class="card-body">
+                    <h3>UK Prime Minister Keir Starmer Resigns Amid Political Strain</h3>
+                    <p>In an unexpected political twist, Starmer officially steps down outside No. 10 Downing Street following intense policy standoffs.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=BBC+Sport+World+Cup+2026+knockout+stage')">
+                <div class="card-img-box">
+                    <span class="badge global-badge">BBC Sport</span>
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&auto=format&fit=crop&q=80" alt="Football Net Stadium">
+                </div>
+                <div class="card-body">
+                    <h3>BBC Digital Traffic Explodes Amid FIFA World Cup Bracket Drama</h3>
+                    <p>Streaming numbers smash past historical records as the tournament grid hits high-stakes Round of 32 configurations across North America.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=BBC+News+Europe+extreme+June+heatwave')">
+                <div class="card-img-box">
+                    <span class="badge global-badge">BBC Climate</span>
+                    <img src="https://images.unsplash.com/photo-1565674484074-b467ec6b8997?w=500&auto=format&fit=crop&q=80" alt="Extreme Heat Sun Flare">
+                </div>
+                <div class="card-body">
+                    <h3>Extreme Heatwave Grips Southern Europe With Peak Temperatures</h3>
+                    <p>Bordeaux, France projects record metrics touching 43°C while Spain enters absolute red alert flags following blistering thermal air vectors.</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- SECTION C: NATIONAL & MARKET DESK -->
+        <h2 class="grid-header">National & Business Updates</h2>
+        <div class="news-grid" style="margin-bottom: 5rem;">
+            
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=Gold+rate+India+June+2026+update')">
+                <div class="card-img-box">
+                    <span class="badge">Markets</span>
+                    <img src="https://images.unsplash.com/photo-1610375228911-c4abdd9c4723?w=500&auto=format&fit=crop&q=80" alt="Financial Gold Bars">
+                </div>
+                <div class="card-body">
+                    <h3>Domestic Gold Values Ease Down By 1.25% Globally</h3>
+                    <p>Indian physical metal valuations adjust downwards in major commercial hubs including Bengaluru, tracking subtle shifts in overseas treasury yields.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=Vaibhav+Sooryavanshi+India+cricket+cap+debut')">
+                <div class="card-img-box">
+                    <span class="badge">Cricket</span>
+                    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&auto=format&fit=crop&q=80" alt="Cricket Match Field">
+                </div>
+                <div class="card-body">
+                    <h3>15-Year-Old Prodigy Sooryavanshi Receives Official India Cap</h3>
+                    <p>BCCI reveals images of the young batting sensation accepting his elite national squad kit box before upcoming international matches kick off.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="chromeRedirect('https://www.google.com/search?q=Silver+price+drop+India+June+2026')">
+                <div class="card-img-box">
+                    <span class="badge">Bullion</span>
+                    <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=500&auto=format&fit=crop&q=80" alt="Silver Bars bullion">
+                </div>
+                <div class="card-body">
+                    <h3>Silver Rates Experience Sharp 3.17% Drop Across Major Cities</h3>
+                    <p>Industrial bullion and metal commodities dip notably in Delhi, Mumbai, and Bengaluru, matching current international spot adjustments.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
